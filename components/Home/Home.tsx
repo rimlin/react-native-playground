@@ -13,6 +13,20 @@ export const Home = () => {
         >
           <Text>Movie Carousel</Text>
         </Link>
+        <Link
+          to="/ball"
+          underlayColor="#f0f4f7"
+          style={styles.navItem}
+        >
+          <Text>Ball</Text>
+        </Link>
+        <Link
+          to="/budget"
+          underlayColor="#f0f4f7"
+          style={styles.navItem}
+        >
+          <Text>Budget</Text>
+        </Link>
       </View>
     </View>
   );
@@ -26,11 +40,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   nav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    flexDirection: 'column',
   },
   navItem: {
-    flex: 1,
     alignItems: 'center',
+    padding: 8,
+    marginBottom: 14
   },
 });
